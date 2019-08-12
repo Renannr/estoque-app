@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 if(process.env.DATABASE_URL){
-  const sequelize = new Sequelize(process.env.DATABASE_URL);
+  sequelize = new Sequelize(process.env.DATABASE_URL);
 }
 else{
   sequelize = new Sequelize(
@@ -13,8 +13,6 @@ else{
     },
   );
 }
-
-
 
 const models = {
     Produto: sequelize.import('./Produto'),
