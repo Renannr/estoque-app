@@ -12,6 +12,11 @@ module.exports = function(sequelize) {
       allowNull: true,
       notEmpty: false,
     },
+    categoria: {
+      type: Sequelize.STRING(255),
+      allowNull: true,
+      notEmpty: false,
+    },
     val_ate: {
       type: Sequelize.DATE,
       allowNull: true,
