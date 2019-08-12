@@ -1,13 +1,14 @@
 const Sequelize = require('sequelize');
+const env = require('../../.env');
 
 if(process.env.DATABASE_URL){
   sequelize = new Sequelize(process.env.DATABASE_URL);
 }
 else{
   sequelize = new Sequelize(
-    "estoque-app",
-    "postgres",
-    "batata",
+    env.DB_DATABASE,
+    env.DB_USER,
+    env.DB_PASSWORD,
     {
       dialect: 'postgres',
     },
