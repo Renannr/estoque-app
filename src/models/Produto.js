@@ -18,22 +18,22 @@ module.exports = function(sequelize) {
       notEmpty: false,
     },
     qnt_anterior: {
-      type: Sequelize.DATE,
+      type: Sequelize.DECIMAL(20,2),
       allowNull: true,
       notEmpty: false,
     },
     qnt_entrada: {
-      type: Sequelize.DATE,
+      type: Sequelize.DECIMAL(20,2),
       allowNull: true,
       notEmpty: false,
     },
     qnt_saida: {
-      type: Sequelize.DATE,
+      type: Sequelize.DECIMAL(20,2),
       allowNull: true,
       notEmpty: false,
     },
     qnt_saldo: {
-      type: Sequelize.DATE,
+      type: Sequelize.DECIMAL(20,2),
       allowNull: true,
       notEmpty: false,
     }
