@@ -7,8 +7,6 @@ const app = express();
 const eraseDatabaseOnSync = false;
 
 app.use((req, res, next) => {
-  
-  //do something
   return next();
 });
 
